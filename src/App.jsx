@@ -15,7 +15,7 @@ const App = () => {
     <main className="relative">
       <Nav/>
       <section className="
-        xl:padding-1 
+        xl:padding-l 
         wide:padding-r
         padding-b
       ">
