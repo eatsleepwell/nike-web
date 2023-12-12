@@ -1,4 +1,11 @@
-const Button = ({ label, iconURL, bgColor, borderColor, textColor }) => {
+const Button = ({
+  label,
+  iconURL,
+  bgColor,
+  borderColor,
+  textColor,
+  fullWidth,
+}) => {
   return (
     <button
       className={`flex justify-center 
@@ -9,7 +16,7 @@ const Button = ({ label, iconURL, bgColor, borderColor, textColor }) => {
           ? `${bgColor} ${borderColor} ${textColor} 
             hover:bg-coral-red hover:text-white hover:border-none`
           : `bg-coral-red text-white border-coral-red`
-      } rounded-full`}
+      } rounded-full ${fullWidth && "w-full"}`}
     >
       {label}
       {iconURL && (
